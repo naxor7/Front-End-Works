@@ -1,0 +1,377 @@
+body {
+    font-family: Arial;
+    text-align: center;
+}
+
+.outer-container {
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 24px;
+    margin-bottom: 36px;
+    height: 90vh;
+    max-width: 800px;
+    min-width: 320px;
+}
+
+.notifications-container {
+    box-sizing: border-box;
+    height: 15px;
+    position: relative;
+    background-color: #4083ef;
+}
+
+.notifications-container__connectivity {
+    display: inline;
+    position: absolute;
+    left: 0;
+    padding-left: 14px;
+}
+
+.settings__setting-btn {
+    color: white;
+    font-size: 17px;
+}
+
+.notifications-container__time {
+    display: inline;
+    margin: auto;
+}
+
+.notifications-container__charge {
+    display: inline;
+    position: absolute;
+    right: 0;
+    padding-right: 14px;
+}
+
+.chatapp-container {
+    height: calc(100% - 15px);
+    display: flex;
+    flex-direction: column;
+}
+
+.chatapp-container__top-nav {
+    box-sizing: border-box;
+    height: 40px;
+    position: relative;
+    background-color: #4083ef;
+}
+
+.top-nav__back {
+    box-sizing: border-box;
+    height: 100%;
+    padding-top: 12px;
+    padding-left: 12px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.top-nav__settings {
+    position: absolute;
+    padding-top: 15px;
+    padding-right: 14px;
+    right: 0;
+    top: 0;
+}
+
+.top-nav__chat {
+    display: inline-block;
+    height: 100%;
+    padding-top: 12px;
+    margin: auto;
+}
+
+.messages-div__messages {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.chatapp-container__messages-div {
+    box-sizing: border-box;
+    overflow: scroll;
+    height: calc(100% - 120px);
+    padding-top: 12px;
+    background-color: #fcfcfc;
+}
+
+.location-div__location {
+    width: 180px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: auto;
+    border: 3px solid #4083ef;
+    border-radius: 50%;
+}
+
+.messages-div__location-div {
+    padding-top: 14px;
+    padding-bottom: 44px;
+}
+
+.location__marker {
+    font-size: 100px;
+    color: #4083ef;
+}
+
+.back__back-btn {
+    color: white;
+    font-size: 20px;
+}
+
+.location-div__yes-no {
+    padding-top: 20px;
+}
+
+.yes-no__yes {
+    background-color: #f33146;
+    border: none;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-right: 60px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.yes-no__no {
+    background-color: #f33146;
+    border: none;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.chatapp-container__type-window {
+    box-sizing: border-box;
+    height: 80px;
+    padding: 10px 10px 10px 10px;
+    background-color: #4083ef;
+}
+
+.chat__text {
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.connectivity__text,
+.time__text,
+.charge__text {
+    font-size: 12px;
+    font-weight: medium;
+    color: white;
+}
+
+.connectivity__dots {
+    font-size: 6px;
+    color: white;
+}
+
+.connectivity__wifi {
+    font-size: 10px;
+    color: white;
+}
+
+.messages__message-pic-div {
+    flex: none;
+    padding: 10px;
+}
+
+.messages__message-text-div {
+    flex: 1;
+    padding-left: 20px;
+    padding-top: 8px;
+    padding-bottom: 6px;
+    text-align: left;
+}
+
+.message-pic-div__pic {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.message-text-div__text {
+    font-size: 20px;
+    color: #232425;
+    padding: 7px;
+    background-color: #e8eaeb;
+    border-radius: 10px;
+}
+
+.messages-div__time {
+    text-align: left;
+    font-size: 10px;
+    color: #232425;
+    padding: 10px;
+}
+
+.type-window__outer-div {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    background-color: #fcfcfc;
+}
+
+.outer-div__camera {
+    width: 50px;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 14px 14px 14px 14px;
+    font-size: 32px;
+    color: #b7b7b7;
+}
+
+.outer-div__record {
+    width: 50px;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 14px 14px 14px 14px;
+    font-size: 32px;
+    color: #b7b7b7;
+}
+
+.outer-div__send {
+    width: 60px;
+    height: 100%;
+    cursor: pointer;
+    box-sizing: border-box;
+    padding: 14px 14px 14px 14px;
+    font-size: 32px;
+    color: #fcfcfc;
+    background-color: #f33146;
+}
+
+.outer-div__message-area::placeholder {
+    color: #b7b7b7;
+}
+
+.outer-div__message-text {
+    width: calc(100% - 160px);
+    height: 100%;
+}
+
+.message-text__message-area {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    font-size: 20px;
+    color: #232425;
+    padding-left: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border: none;
+}
+
+.product-display__products {
+    box-sizing: border-box;
+    width: 350px;
+    height: 300px;
+}
+
+.products__products-heading {
+    font-size: 20px;
+    font-weight: bold;
+    margin: auto;
+    box-sizing: border-box;
+    color: #232425;
+    padding-top: 4px;
+    padding-bottom: 12px;
+}
+
+.products__product-div {
+    display: flex;
+    overflow: scroll;
+    height: calc(100% - 20px);
+    background-color: #fcfcfc;
+}
+
+.messages__product-display {
+    box-sizing: border-box;
+    display: flex;
+    width: 410px;
+    height: 340px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.product-div__scroll {
+    padding-top: 160px;
+    width: 30px;
+    padding-right: 8px;
+    padding-left: 8px;
+    height: 100px;
+    font-size: 20px;
+    color: #b7b7b7;
+}
+
+.product-div__product {
+    height: 100%;
+    flex: 0 0 160px;
+    margin-right: 20px;
+    background-color: #dbdada;
+}
+
+.product__image {
+    width: 170px;
+    height: 180px;
+    z-index: 1;
+}
+
+.product__name {
+    font-size: 14px;
+    text-align: left;
+    font-weight: bold;
+    box-sizing: border-box;
+    color: #232425;
+    padding-bottom: 4px;
+    padding-left: 4px;
+}
+
+.product__price {
+    font-size: 12px;
+    box-sizing: border-box;
+    text-align: left;
+    color: #232425;
+    padding-bottom: 4px;
+    padding-left: 4px;
+}
+
+.product__compare {
+    background-color: #f33146;
+    border: none;
+    color: white;
+    margin: auto;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 800px) {}
+
+@media screen and (max-width: 600px) {}
+
+@media screen and (max-width: 400px) {}

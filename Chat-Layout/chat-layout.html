@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chat Layout</title>
+    <link rel="stylesheet" href="chat-layout.css">
+    <link rel="stylesheet" href="../css/grid-layout.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="col-sm-12 outer-container">
+        <div class="col-sm-12 notifications-container">
+            <div class="notifications-container__connectivity">
+                <span class="connectivity__dots">
+                    <i class="fas fa-circle"></i>
+                    <i class="fas fa-circle"></i>
+                    <i class="fas fa-circle"></i>
+                </span>
+                <span class="connectivity__text">Sketch</span>
+                <span class="connectivity__wifi">
+                    <i class="fas fa-wifi"></i>
+                </span>
+            </div>
+            <div class="notifications-container__time">
+                <span class="time__text">9:41 AM</span>
+            </div>
+            <div class="notifications-container__charge">
+                <span class="charge__text">100%</span>
+            </div>
+        </div>
+        <div class="col-sm-12 chatapp-container">
+            <div class="col-sm-12 chatapp-container__top-nav">
+                <div class="top-nav__back">
+                    <span class="back__back-btn">
+                        <i class="fas fa-chevron-left"></i>
+                    </span>
+                </div>
+                <div class="top-nav__chat">
+                    <span class="chat__text">CHAT</span>
+                </div>
+                <div class="top-nav__settings">
+                    <span class="settings__setting-btn">
+                        <i class="fas fa-sliders-h"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="col-sm-12 chatapp-container__messages-div" id="messages-div">
+                <div class="messages-div__messages">
+                    <div class="messages__message-pic-div">
+                        <img src="resources/science.png" alt="profile picture" class="message-pic-div__pic">
+                    </div>
+                    <div class="messages__message-text-div">
+                        <div class="message-text-div__text">I need access to your location to suggest stores near by.</div>
+                        <div class="messages-div__time">01:45</div>
+                    </div>
+                </div>
+                <div class="messages-div__location-div">
+                    <div class="location-div__location">
+                        <i class="fas fa-map-marker-alt location__marker"></i>
+                    </div>
+                    <div class="location-div__yes-no">
+                        <input type="button" value="Yes" class="yes-no__yes">
+                        <input type="button" value="No" class="yes-no__no">
+                    </div>
+                </div>
+                <div class="messages-div__messages">
+                    <div class="messages__message-pic-div">
+                        <img src="resources/science.png" alt="profile picture" class="message-pic-div__pic">
+                    </div>
+                    <div class="messages__message-text-div">
+                        <div class="message-text-div__text">Here are some of the best selling circular saws in the shops
+                            around you.</div>
+                        <div class="messages-div__time">01:46</div>
+                    </div>
+                </div>
+                <div class="messages__product-display">
+                    <div class="product-div__scroll">
+                        <i class="fas fa-chevron-left"></i>
+                    </div>
+                    <div class="product-display__products">
+                        <div class="products__products-heading">
+                            PRODUCTS
+                        </div>
+                        <div class="products__product-div">
+                            <div class="product-div__product">
+                                <img src="resources/saw1.jpg" alt="Circular Saw" class="product__image">
+                                <div class="product__name">
+                                    DEWALT DWE575
+                                </div>
+                                <div class="product__price">
+                                    $ 124.95
+                                </div>
+                                <input type="button" value="Compare" class="product__compare">
+                            </div>
+                            <div class="product-div__product">
+                                <img src="resources/saw2.jpg" alt="Circular Saw" class="product__image">
+                                <div class="product__name">
+                                    DEWALT DWE575
+                                </div>
+                                <div class="product__price">
+                                    $ 124.95
+                                </div>
+                                <input type="button" value="Compare" class="product__compare">
+                            </div>
+                            <div class="product-div__product">
+                                <img src="resources/saw3.jpg" alt="Circular Saw" class="product__image">
+                                <div class="product__name">
+                                    DEWALT DWE576
+                                </div>
+                                <div class="product__price">
+                                    $ 129.95
+                                </div>
+                                <input type="button" value="Compare" class="product__compare">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-div__scroll">
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 chatapp-container__type-window">
+                <div class="type-window__outer-div">
+                    <div class="outer-div__camera">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <div class="outer-div__message-text">
+                        <input type="text" name="message" placeholder="Type Something" class="message-text__message-area" id="message-text">
+                    </div>
+                    <div class="outer-div__record">
+                        <i class="fas fa-microphone"></i>
+                    </div>
+                    <div class="outer-div__send" id="send-button">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="store-messages.js"></script>
+</body>
+
+</html>

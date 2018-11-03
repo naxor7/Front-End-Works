@@ -1,0 +1,107 @@
+body {
+    background-color: #1589FF;
+    font-family: Arial;
+}
+
+.timeframe-inputs,
+.projecttype-inputs,
+.project {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+}
+
+.side-nav {
+    display: inline-block;
+}
+
+.input-text {
+    padding-left: 15px;
+}
+
+h1 {
+    padding-left: 70px;
+    padding-top: 40px;
+    font-size: 70px;
+    color: white;
+    font-weight: boldest;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.time-frame,
+.project-type,
+.personal-details,
+.project {
+    vertical-align: top;
+    padding-left: 40px;
+    font-size: 24px;
+    color: white;
+}
+
+.time-frame,
+.project-type {
+    padding-right: 150px;
+}
+
+.personal-details,
+.project {
+    display: inline-block;
+    padding-right: 80px;
+}
+
+.project {
+    padding-top: 100px;
+}
+
+.personal-details input {
+    display: block;
+}
+
+.input-box {
+    width: 350px;
+    height: 50px;
+    margin: 30px 10px 10px 0px;
+    background-color: #1275a0;
+    font-size: 20px;
+    color: white;
+    border: 0px;
+    padding-left: 12px;
+}
+
+.project-description {
+    box-sizing: border-box;
+    background-color: #1275a0;
+    font-size: 20px;
+    color: white;
+    border: 0px;
+    padding: 12px;
+    border: 0px;
+}
+
+::placeholder {
+    color: white;
+    opacity: 1;
+}
+
+.sendenquiry {
+    margin-top: 10px;
+    width: 180px;
+    height: 70px;
+    display: block;
+    position: relative;
+    left: 332px;
+    background-color: #1275a0;
+    border: 3px solid white;
+}
+
+.close-btn {
+    float: right;
+    width: 100px;
+    height: 100px;
+    font-size: 70px;
+    color: white;
+}

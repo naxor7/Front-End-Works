@@ -1,0 +1,155 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+}
+
+.outer-div {
+    width: 650px;
+    height: 100%;
+    min-width: 500px;
+    overflow-x: auto;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: scale(0.7);
+}
+
+.loader {
+    width: 100%;
+    height: 300px;
+    position: relative;
+}
+
+.loader__db {
+    font-size: 70px;
+    position: absolute;
+    top: 100px;
+    left: 45px;
+    color: #1f1f1f;
+}
+
+.loader__store {
+    font-size: 70px;
+    position: absolute;
+    top: 100px;
+    left: 260px;
+    color: #1f1f1f;
+}
+
+.loader__dots {
+    font-size: 10px;
+    color: #1f1f1f;
+}
+
+.dots__dot {
+    position: absolute;
+    top: 145px;
+}
+
+.dots__dot:nth-child(1) {
+    left: 125px;
+    animation: fade-in 0.4s linear infinite;
+}
+
+.dots__dot:nth-child(2) {
+    left: 125px;
+    animation: move-dots 0.4s linear infinite;
+}
+
+.dots__dot:nth-child(3) {
+    left: 150px;
+    animation: move-dots 0.4s linear infinite;
+}
+
+.dots__dot:nth-child(4) {
+    left: 175px;
+    animation: move-dots 0.4s linear infinite;
+}
+
+.dots__dot:nth-child(5) {
+    left: 200px;
+    animation: move-dots 0.4s linear infinite;
+}
+
+.dots__dot:nth-child(6) {
+    left: 225px;
+    animation: move-dots 0.4s linear infinite;
+}
+
+.dots__dot:nth-child(7) {
+    left: 244px;
+    animation: fade-out 0.4s linear infinite;
+}
+
+@keyframes move-dots {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(19px, 0);
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes fade-out {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
+
+.loader__desktop {
+    font-size: 70px;
+    position: absolute;
+    top: 100px;
+    left: 530px;
+    color: #1f1f1f;
+}
+
+.loader__files {
+    font-size: 35px;
+    position: absolute;
+    top: 128px;
+    color: #1f1f1f;
+}
+
+.loader__files:nth-child(1) {
+    left: 362px;
+    animation: fade-in 0.8s linear infinite;
+}
+
+.loader__files:nth-child(2) {
+    left: 362px;
+    animation: move-files 0.8s linear infinite;
+}
+
+.loader__files:nth-child(3) {
+    left: 422px;
+    animation: move-files 0.8s linear infinite;
+}
+
+.loader__files:nth-child(4) {
+    left: 482px;
+    animation: fade-out 0.8s linear infinite;
+}
+
+@keyframes move-files {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(60px, 0);
+    }
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/side-navigation.css">
+    <title>Side Navigation</title>
+</head>
+
+<body>
+    <div class="outer-container">
+        <div id="mySidenav" class="sidenav">
+            <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">Option1</a>
+            <a href="#">Option2</a>
+            <a href="#">Option3</a>
+            <a href="#">Option4</a>
+        </div>
+        <div class="outer-container__nav-button" onclick="openNav()">
+            Open Navigation
+        </div>
+    </div>
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+            
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+</body>
+
+</html>

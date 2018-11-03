@@ -1,0 +1,83 @@
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0px;
+}
+
+.outer-container {
+    box-sizing: border-box;
+    width: 314px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.outer-container__desktop {
+    position: relative;
+}
+
+.desktop__desktop-icon {
+    font-size: 280px;
+}
+
+.desktop__appstore-icon {
+    width: 120px;
+    height: 120px;
+    color: black;
+    margin: auto;
+    position: absolute;
+    overflow: auto;
+    top: 80px;
+    left: 94px;
+}
+
+.desktop__screen {
+    width: 246px;
+    height: 160px;
+    position: absolute;
+    top: 54px;
+    left: 34px;
+    background-image: url(resources/water1.jpeg);
+    background-repeat: repeat-x;
+    overflow: hidden;
+    animation: water-flow 8s linear infinite;
+}
+
+@keyframes water-flow {
+    0% {
+        background-position: left 0px top 80px;
+    }
+    20% {
+        background-position: left 500px top 60px;
+    }
+    40% {
+        background-position: left 1200px top 50px;
+    }
+    60% {
+        background-position: left 1900px top 30px;
+    }
+    80% {
+        background-position: left 2800px top 0px;
+    }
+    100% {
+        background-position: left 3100px top -80px;
+    }
+}
+
+.appstore-icon__border-circle {
+    position: absolute;
+    width: 67px;
+    height: 67px;
+    top: 0px;
+    left: 5px;
+    border: 22px solid black;
+    border-radius: 50%;
+}
+
+.appstore-icon__icon {
+    margin: auto;
+    font-size: 90px;
+    width: 78px;
+}

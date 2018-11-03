@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Drop-Down Page</title>
+    <link rel="stylesheet" href="details-form.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="outer-div">
+        <i class="fas fa-times-circle close-btn"></i>
+        <h1>
+            Let's craft your product.
+        </h1>
+        <div class="side-nav">
+            <div class="time-frame">
+                <h2>Timeframe</h2>
+                <div class="timeframe-inputs">
+                    <input type="radio" name="timeframe" value="1-month">
+                    <span class="input-text">1 month</span>
+                </div>
+                <div class="timeframe-inputs">
+                    <input type="radio" name="timeframe" value="2-3-month">
+                    <span class="input-text">2-3 month</span>
+                </div>
+                <div class="timeframe-inputs">
+                    <input type="radio" name="timeframe" value="4-month">
+                    <span class="input-text">4+ month</span>
+                </div>
+            </div>
+            <div class="project-type">
+                <h2>Project Type</h2>
+                <div class="projecttype-inputs">
+                    <input type="checkbox" name="projecttype" value="desktop">
+                    <span class="input-text">Desktop</span>
+                </div>
+                <div class="projecttype-inputs">
+                    <input type="checkbox" name="projecttype" value="web">
+                    <span class="input-text">Web</span>
+                </div>
+                <div class="projecttype-inputs">
+                    <input type="checkbox" name="projecttype" value="mobile">
+                    <span class="input-text">Mobile</span>
+                </div>
+                <div class="projecttype-inputs">
+                    <input type="checkbox" name="projecttype" value="other">
+                    <span class="input-text">Other</span>
+                </div>
+            </div>
+        </div>
+        <div class="personal-details">
+            <h2>Personal details</h2>
+            <input type="name" name="Name" placeholder="Name" class="input-box">
+            <input type="text" name="Company" placeholder="Company" class="input-box">
+            <input type="email" name="Email" placeholder="Email" class="input-box">
+            <input type="text" name="Budget" placeholder="Budget" class="input-box">
+        </div>
+        <div class="project">
+            <textarea rows="14" cols="40" placeholder="Tell us about your project" class="project-description">Tell us about your</textarea>
+            <button type="button" class="sendenquiry" onclick="validateform()">Send Enquiry</button>
+        </div>
+    </div>
+    <script>
+        function validateform() {
+            if(!validate(/^[a-zA-Z ]{2,30}$/, document.querySelector("input[name='Name']"))) {
+                alert("Name must contain only alphabets and length should be between 2 and 30");
+                return ;
+            }   
+            if(!validate(/^[a-zA-Z ]{1,30}$/, document.querySelector("input[name='Company']"))) {
+                alert("Company Name must contain only alphabets and length should be between 1 and 30");
+                return ;
+            }
+            if(!validate(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/, document.querySelector("input[name='Email']"))) {
+                alert("Email ID is not valid");
+                return ;
+            }  
+            if(!validate(/^\d+$/, document.querySelector("input[name='Budget']"))) {
+                alert("Budget is not a valid number");
+                return ;
+            }      
+        }
+
+        function validate(regex, text) {
+           return regex.test(text.value);
+        }
+
+    </script>
+</body>
